@@ -2,8 +2,6 @@ package space.bum.junit.ch13.flightPassen;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-//import static org.junit.jupiter.api.Assertions.*;
-
 import java.io.IOException;
 
 import org.junit.jupiter.api.Test;
