@@ -24,7 +24,7 @@ class FlightWithPassengersTest {
   @Test
   void testAddRemovePassengers() throws IOException {
     Passenger passenger = new Passenger("123-456-789", "정다래", "KR");
-    assertTrue(flight.addPassengers(passenger));
+    flight.addPassengers(passenger);
     assertEquals(1, flight.getNumberOfPassengers());
     assertEquals(flight, passenger.getFlight());
 
