@@ -13,6 +13,15 @@ class FlightWithPassengersTest {
   private Flight flight = new Flight("AF1234", 1);
 
   @Test
+  public void testPassengerJoinsFlight() {
+    Passenger passenger = new Passenger("123-456-884", "김수미", "KR");
+    Flight flight = new Flight("AF345", 100);
+    passenger.joinFlight(flight);
+    assertEquals(flight, passenger.getFlight());
+    assertEquals(1, flight.getNumberOfPassengers());    
+  }
+
+  @Test
   void testAddRemovePassengers() throws IOException {
     Passenger passenger = new Passenger("123-456-789", "정다래", "KR");
     assertTrue(flight.addPassengers(passenger));
