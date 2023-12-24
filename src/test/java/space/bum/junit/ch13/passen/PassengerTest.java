@@ -22,7 +22,8 @@ class PassengerTest {
   @Test
   public void testPassengerToString() {
     Passenger passenger = new Passenger("123-45-6789", "정석훈", "KR");
-    assertEquals("Passenger(identifier=123-45-6789, name=정석훈, countryCode=KR)",
+    assertEquals(
+        "Passenger(identifier=123-45-6789, name=정석훈, countryCode=KR, flight=null)",
         passenger.toString());
   }
 }
