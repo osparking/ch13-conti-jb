@@ -42,6 +42,7 @@ public class Flight {
   }
 
   public boolean removePassenger(Passenger passenger) {
+    passenger.setFlight(null);
     return passengers.remove(passenger);
   }
 }
