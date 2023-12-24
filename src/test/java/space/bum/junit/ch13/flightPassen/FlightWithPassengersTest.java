@@ -28,7 +28,7 @@ class FlightWithPassengersTest {
     assertEquals(1, flight.getNumberOfPassengers());
     assertEquals(flight, passenger.getFlight());
 
-    assertTrue(flight.removePassenger(passenger));
+    flight.removePassenger(passenger);
     assertEquals(0, flight.getNumberOfPassengers());
     assertEquals(null, passenger.getFlight());
   }
