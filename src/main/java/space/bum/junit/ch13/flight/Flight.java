@@ -37,6 +37,7 @@ public class Flight {
     if (getNumberOfPassengers() >= seats) {
       throw new RuntimeException("좌석이 부족한 항공편 번호: " + flightNumber);
     }
+    passenger.setFlight(this);
     return passengers.add(passenger);
   }
 
